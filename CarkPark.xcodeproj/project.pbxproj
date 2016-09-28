@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19295F94DBF00376F0FD9247 /* Pods_CarkParkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C020C8FDE1BD8AB98EED4587 /* Pods_CarkParkTests.framework */; };
 		2432BD6C1D9C733D00AD7EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */; };
 		2432BD6E1D9C733D00AD7EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */; };
 		2432BD711D9C733D00AD7EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2432BD6F1D9C733D00AD7EC6 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		2432BD791D9C733E00AD7EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2432BD771D9C733E00AD7EC6 /* LaunchScreen.storyboard */; };
 		2432BD841D9C733E00AD7EC6 /* CarkParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD831D9C733E00AD7EC6 /* CarkParkTests.swift */; };
 		2432BD8F1D9C733E00AD7EC6 /* CarkParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD8E1D9C733E00AD7EC6 /* CarkParkUITests.swift */; };
+		47D99C27E58B616FCC4B57EE /* Pods_CarkParkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */; };
+		A27336B8DF7CEA49891BE9EC /* Pods_CarkPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BAF825155EFB77DCDD69B0A /* Pods-CarkParkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkParkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarkParkUITests/Pods-CarkParkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14EF3C8E2AE04F5DE20E1769 /* Pods-CarkPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkPark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark.debug.xcconfig"; sourceTree = "<group>"; };
 		2432BD681D9C733D00AD7EC6 /* CarkPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarkPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		2432BD8A1D9C733E00AD7EC6 /* CarkParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarkParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2432BD8E1D9C733E00AD7EC6 /* CarkParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarkParkUITests.swift; sourceTree = "<group>"; };
 		2432BD901D9C733E00AD7EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark.release.xcconfig"; sourceTree = "<group>"; };
+		6C1A631424C357B986211FD3 /* Pods-CarkParkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkParkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkParkTests/Pods-CarkParkTests.release.xcconfig"; sourceTree = "<group>"; };
+		84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkParkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C020C8FDE1BD8AB98EED4587 /* Pods_CarkParkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkParkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C833BD07D9AA4D1E99425F8E /* Pods-CarkParkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkParkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarkParkTests/Pods-CarkParkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2A59DDEB484075380870DEC /* Pods-CarkParkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkParkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkParkUITests/Pods-CarkParkUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27336B8DF7CEA49891BE9EC /* Pods_CarkPark.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19295F94DBF00376F0FD9247 /* Pods_CarkParkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D99C27E58B616FCC4B57EE /* Pods_CarkParkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2432BD821D9C733E00AD7EC6 /* CarkParkTests */,
 				2432BD8D1D9C733E00AD7EC6 /* CarkParkUITests */,
 				2432BD691D9C733D00AD7EC6 /* Products */,
+				3E933C8702C720BCDA442F63 /* Pods */,
+				CAB424841555E103F9C14B78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = CarkParkUITests;
 			sourceTree = "<group>";
 		};
+		3E933C8702C720BCDA442F63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14EF3C8E2AE04F5DE20E1769 /* Pods-CarkPark.debug.xcconfig */,
+				4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */,
+				C833BD07D9AA4D1E99425F8E /* Pods-CarkParkTests.debug.xcconfig */,
+				6C1A631424C357B986211FD3 /* Pods-CarkParkTests.release.xcconfig */,
+				0BAF825155EFB77DCDD69B0A /* Pods-CarkParkUITests.debug.xcconfig */,
+				D2A59DDEB484075380870DEC /* Pods-CarkParkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CAB424841555E103F9C14B78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */,
+				C020C8FDE1BD8AB98EED4587 /* Pods_CarkParkTests.framework */,
+				84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2432BD931D9C733E00AD7EC6 /* Build configuration list for PBXNativeTarget "CarkPark" */;
 			buildPhases = (
+				4D6CF67FB54CEBFAE4396F23 /* [CP] Check Pods Manifest.lock */,
 				2432BD641D9C733D00AD7EC6 /* Sources */,
 				2432BD651D9C733D00AD7EC6 /* Frameworks */,
 				2432BD661D9C733D00AD7EC6 /* Resources */,
+				37BF4BBAD9C30C7C17EEF8F6 /* [CP] Embed Pods Frameworks */,
+				C5614A9CD4526E6692B38FC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2432BD961D9C733E00AD7EC6 /* Build configuration list for PBXNativeTarget "CarkParkTests" */;
 			buildPhases = (
+				70A1BC72B688D834BC65A173 /* [CP] Check Pods Manifest.lock */,
 				2432BD7B1D9C733E00AD7EC6 /* Sources */,
 				2432BD7C1D9C733E00AD7EC6 /* Frameworks */,
 				2432BD7D1D9C733E00AD7EC6 /* Resources */,
+				364F49EC3E6CE2705FCE5781 /* [CP] Embed Pods Frameworks */,
+				51B0B988987DA25FA090722C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2432BD991D9C733E00AD7EC6 /* Build configuration list for PBXNativeTarget "CarkParkUITests" */;
 			buildPhases = (
+				FCE05F44C9E28D8E79E5A184 /* [CP] Check Pods Manifest.lock */,
 				2432BD861D9C733E00AD7EC6 /* Sources */,
 				2432BD871D9C733E00AD7EC6 /* Frameworks */,
 				2432BD881D9C733E00AD7EC6 /* Resources */,
+				8580D10E22AE6DDDD9CF7B37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +304,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		364F49EC3E6CE2705FCE5781 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkParkTests/Pods-CarkParkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37BF4BBAD9C30C7C17EEF8F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D6CF67FB54CEBFAE4396F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		51B0B988987DA25FA090722C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkParkTests/Pods-CarkParkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A1BC72B688D834BC65A173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8580D10E22AE6DDDD9CF7B37 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkParkUITests/Pods-CarkParkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5614A9CD4526E6692B38FC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE05F44C9E28D8E79E5A184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2432BD641D9C733D00AD7EC6 /* Sources */ = {
@@ -414,6 +585,7 @@
 		};
 		2432BD941D9C733E00AD7EC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EF3C8E2AE04F5DE20E1769 /* Pods-CarkPark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CarkPark/Info.plist;
@@ -426,6 +598,7 @@
 		};
 		2432BD951D9C733E00AD7EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CarkPark/Info.plist;
@@ -438,6 +611,7 @@
 		};
 		2432BD971D9C733E00AD7EC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C833BD07D9AA4D1E99425F8E /* Pods-CarkParkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +626,7 @@
 		};
 		2432BD981D9C733E00AD7EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1A631424C357B986211FD3 /* Pods-CarkParkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +641,7 @@
 		};
 		2432BD9A1D9C733E00AD7EC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BAF825155EFB77DCDD69B0A /* Pods-CarkParkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CarkParkUITests/Info.plist;
@@ -479,6 +655,7 @@
 		};
 		2432BD9B1D9C733E00AD7EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A59DDEB484075380870DEC /* Pods-CarkParkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CarkParkUITests/Info.plist;
@@ -509,6 +686,7 @@
 				2432BD951D9C733E00AD7EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2432BD961D9C733E00AD7EC6 /* Build configuration list for PBXNativeTarget "CarkParkTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +695,7 @@
 				2432BD981D9C733E00AD7EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2432BD991D9C733E00AD7EC6 /* Build configuration list for PBXNativeTarget "CarkParkUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +704,7 @@
 				2432BD9B1D9C733E00AD7EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
