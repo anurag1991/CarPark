@@ -8,3 +8,11 @@
 
 import Foundation
 import FBSDKLoginKit
+
+class CPSocialNetworkingManager: NSObject {
+    
+    public func callFaceBookLogin(){
+    
+    }
+    
+}
