@@ -11,7 +11,7 @@ import FBSDKLoginKit
 
 class ViewController: UIViewController {
     
-    //********* Need to put all FB code into wrapper class for CPSocialNetworkingManager
+    //********* Need to put all FB code into wrapper class < CPSocialNetworkingManager >
 
     @IBOutlet weak var label_name: UILabel!
     @IBOutlet weak var fbLoginButton: UIButton!
@@ -19,10 +19,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView_profilepic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (FBSDKAccessToken.current()) != nil{
+            self.fetchFacebookUserProfile()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+       
         // Dispose of any resources that can be recreated.
     }
 
@@ -55,9 +59,9 @@ class ViewController: UIViewController {
             }
             
             if let picture = dictionary["picture"] as? NSDictionary, let data = picture["data"] as? NSDictionary, let url = data["url"] as? String{
-                let pictureURL = NSURL(fileURLWithPath: url)
-                let data = NSData(contentsOf: pictureURL as URL)
-                // bug self.imageView_profilepic.image = UIImage(data: data as! Data)
+                let pictureURL = NSURL(string: url)
+                let data = NSData(contentsOf: pictureURL as! URL)
+                self.imageView_profilepic.image = UIImage(data: data as! Data)
             }
             
         }
