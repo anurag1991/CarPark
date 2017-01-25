@@ -130,7 +130,7 @@
 			children = (
 				2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */,
 				2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */,
-				246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */,
+				2465928A1E39012700E6040D /* SocialManager */,
 				24FB602E1D9C78ED00A0C148 /* CPLoginViewController */,
 				24FB602B1D9C77AB00A0C148 /* CPMenuList */,
 				2432BD6F1D9C733D00AD7EC6 /* Main.storyboard */,
@@ -158,6 +158,14 @@
 				2432BD901D9C733E00AD7EC6 /* Info.plist */,
 			);
 			path = CarkParkUITests;
+			sourceTree = "<group>";
+		};
+		2465928A1E39012700E6040D /* SocialManager */ = {
+			isa = PBXGroup;
+			children = (
+				246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */,
+			);
+			name = SocialManager;
 			sourceTree = "<group>";
 		};
 		24FB602B1D9C77AB00A0C148 /* CPMenuList */ = {

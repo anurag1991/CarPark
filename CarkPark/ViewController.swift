@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let fbButton = FBSDKLoginButton()
+        fbButton.center = self.view.center
+        self.view.addSubview(fbButton)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
