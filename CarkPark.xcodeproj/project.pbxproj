@@ -17,11 +17,10 @@
 		2432BD841D9C733E00AD7EC6 /* CarkParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD831D9C733E00AD7EC6 /* CarkParkTests.swift */; };
 		2432BD8F1D9C733E00AD7EC6 /* CarkParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD8E1D9C733E00AD7EC6 /* CarkParkUITests.swift */; };
 		246592891E38FFB400E6040D /* CPSocialNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */; };
+		24B3FED21E3FA34A00CF5848 /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */; };
 		24FB602A1D9C77A600A0C148 /* CPMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB60291D9C77A600A0C148 /* CPMenuList.swift */; };
 		24FB602D1D9C78E500A0C148 /* CPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB602C1D9C78E500A0C148 /* CPLoginViewController.swift */; };
 		47D99C27E58B616FCC4B57EE /* Pods_CarkParkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */; };
-		6E0B80511E39482700892EC1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0B804F1E39482700892EC1 /* FBSDKCoreKit.framework */; };
-		6E0B80521E39482700892EC1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0B80501E39482700892EC1 /* FBSDKLoginKit.framework */; };
 		A27336B8DF7CEA49891BE9EC /* Pods_CarkPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,12 +59,12 @@
 		2432BD8E1D9C733E00AD7EC6 /* CarkParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarkParkUITests.swift; sourceTree = "<group>"; };
 		2432BD901D9C733E00AD7EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSocialNetworkingManager.swift; sourceTree = "<group>"; };
+		24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarPark-Bridging-Header.h"; sourceTree = "<group>"; };
+		24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPMapViewController.swift; path = CPLoginViewController/CPMap/CPMapViewController.swift; sourceTree = "<group>"; };
 		24FB60291D9C77A600A0C148 /* CPMenuList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPMenuList.swift; path = CPMenuList/CPMenuList.swift; sourceTree = "<group>"; };
 		24FB602C1D9C78E500A0C148 /* CPLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPLoginViewController.swift; path = CPLoginViewController/CPLoginViewController.swift; sourceTree = "<group>"; };
 		4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark.release.xcconfig"; sourceTree = "<group>"; };
 		6C1A631424C357B986211FD3 /* Pods-CarkParkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkParkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkParkTests/Pods-CarkParkTests.release.xcconfig"; sourceTree = "<group>"; };
-		6E0B804F1E39482700892EC1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		6E0B80501E39482700892EC1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkParkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C020C8FDE1BD8AB98EED4587 /* Pods_CarkParkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkParkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,8 +78,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27336B8DF7CEA49891BE9EC /* Pods_CarkPark.framework in Frameworks */,
-				6E0B80511E39482700892EC1 /* FBSDKCoreKit.framework in Frameworks */,
-				6E0B80521E39482700892EC1 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */,
+				24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */,
 				2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */,
 				2465928A1E39012700E6040D /* SocialManager */,
 				24FB602E1D9C78ED00A0C148 /* CPLoginViewController */,
@@ -168,10 +166,19 @@
 			name = SocialManager;
 			sourceTree = "<group>";
 		};
+		24B3FED31E3FA35200CF5848 /* CPMap */ = {
+			isa = PBXGroup;
+			children = (
+				24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */,
+			);
+			name = CPMap;
+			sourceTree = "<group>";
+		};
 		24FB602B1D9C77AB00A0C148 /* CPMenuList */ = {
 			isa = PBXGroup;
 			children = (
 				24FB60291D9C77A600A0C148 /* CPMenuList.swift */,
+				24B3FED31E3FA35200CF5848 /* CPMap */,
 			);
 			name = CPMenuList;
 			sourceTree = "<group>";
@@ -200,8 +207,6 @@
 		CAB424841555E103F9C14B78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E0B804F1E39482700892EC1 /* FBSDKCoreKit.framework */,
-				6E0B80501E39482700892EC1 /* FBSDKLoginKit.framework */,
 				BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */,
 				C020C8FDE1BD8AB98EED4587 /* Pods_CarkParkTests.framework */,
 				84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */,
@@ -262,6 +267,7 @@
 				2432BD871D9C733E00AD7EC6 /* Frameworks */,
 				2432BD881D9C733E00AD7EC6 /* Resources */,
 				8580D10E22AE6DDDD9CF7B37 /* [CP] Copy Pods Resources */,
+				FAFF8427778F881F8C9E1612 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,7 +395,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		51B0B988987DA25FA090722C /* [CP] Copy Pods Resources */ = {
@@ -419,7 +425,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8580D10E22AE6DDDD9CF7B37 /* [CP] Copy Pods Resources */ = {
@@ -452,6 +458,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FAFF8427778F881F8C9E1612 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkParkUITests/Pods-CarkParkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FCE05F44C9E28D8E79E5A184 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -474,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B3FED21E3FA34A00CF5848 /* CPMapViewController.swift in Sources */,
 				2432BD741D9C733D00AD7EC6 /* CarkPark.xcdatamodeld in Sources */,
 				2432BD6E1D9C733D00AD7EC6 /* ViewController.swift in Sources */,
 				2432BD6C1D9C733D00AD7EC6 /* AppDelegate.swift in Sources */,

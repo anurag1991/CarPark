@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKLoginKit
+import LMSideBarController
 
 class ViewController: UIViewController {
     
@@ -20,8 +21,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if (FBSDKAccessToken.current()) != nil{
-            self.fetchFacebookUserProfile()
-        }
+            let mapViewController = CPMapViewController()
+            
+self.navigationController?.pushViewController(mapViewController, animated: true)        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,9 +39,14 @@ class ViewController: UIViewController {
                 print("login failed")
             }
             if (FBSDKAccessToken.current()) != nil{
-                self.fetchFacebookUserProfile()
+                self.navigationController?.pushViewController(self.getMapViewControllerWith(Identifier: "CPMapViewIdentifier"), animated: true)
             }
         }
+    }
+    
+    func getMapViewControllerWith(Identifier:String) -> CPMapViewController {
+        let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: Identifier) as? CPMapViewController
+        return mapViewControllerObj!
     }
     
     func fetchFacebookUserProfile()  {
