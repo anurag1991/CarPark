@@ -8,8 +8,15 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 class CPMapViewController: UIViewController {
     
+    @IBAction func logout(_ sender: Any) {
+        FBSDKAccessToken.setCurrent(nil)
+        self.navigationController?.popViewController(animated: true)
+    
+    }
 
 
 }

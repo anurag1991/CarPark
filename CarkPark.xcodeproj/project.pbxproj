@@ -18,6 +18,7 @@
 		2432BD8F1D9C733E00AD7EC6 /* CarkParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD8E1D9C733E00AD7EC6 /* CarkParkUITests.swift */; };
 		246592891E38FFB400E6040D /* CPSocialNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */; };
 		24B3FED21E3FA34A00CF5848 /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */; };
+		24B3FF0F1E3FD72900CF5848 /* CPStoryBoardID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3FF0E1E3FD72900CF5848 /* CPStoryBoardID.swift */; };
 		24FB602A1D9C77A600A0C148 /* CPMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB60291D9C77A600A0C148 /* CPMenuList.swift */; };
 		24FB602D1D9C78E500A0C148 /* CPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB602C1D9C78E500A0C148 /* CPLoginViewController.swift */; };
 		47D99C27E58B616FCC4B57EE /* Pods_CarkParkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */; };
@@ -61,6 +62,7 @@
 		246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSocialNetworkingManager.swift; sourceTree = "<group>"; };
 		24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarPark-Bridging-Header.h"; sourceTree = "<group>"; };
 		24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPMapViewController.swift; path = CPLoginViewController/CPMap/CPMapViewController.swift; sourceTree = "<group>"; };
+		24B3FF0E1E3FD72900CF5848 /* CPStoryBoardID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPStoryBoardID.swift; sourceTree = "<group>"; };
 		24FB60291D9C77A600A0C148 /* CPMenuList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPMenuList.swift; path = CPMenuList/CPMenuList.swift; sourceTree = "<group>"; };
 		24FB602C1D9C78E500A0C148 /* CPLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPLoginViewController.swift; path = CPLoginViewController/CPLoginViewController.swift; sourceTree = "<group>"; };
 		4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */,
 				24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */,
 				2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */,
+				24B3FF101E3FD7C000CF5848 /* Helper classes */,
 				2465928A1E39012700E6040D /* SocialManager */,
 				24FB602E1D9C78ED00A0C148 /* CPLoginViewController */,
 				24FB602B1D9C77AB00A0C148 /* CPMenuList */,
@@ -172,6 +175,14 @@
 				24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */,
 			);
 			name = CPMap;
+			sourceTree = "<group>";
+		};
+		24B3FF101E3FD7C000CF5848 /* Helper classes */ = {
+			isa = PBXGroup;
+			children = (
+				24B3FF0E1E3FD72900CF5848 /* CPStoryBoardID.swift */,
+			);
+			name = "Helper classes";
 			sourceTree = "<group>";
 		};
 		24FB602B1D9C77AB00A0C148 /* CPMenuList */ = {
@@ -495,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B3FF0F1E3FD72900CF5848 /* CPStoryBoardID.swift in Sources */,
 				24B3FED21E3FA34A00CF5848 /* CPMapViewController.swift in Sources */,
 				2432BD741D9C733D00AD7EC6 /* CarkPark.xcdatamodeld in Sources */,
 				2432BD6E1D9C733D00AD7EC6 /* ViewController.swift in Sources */,
