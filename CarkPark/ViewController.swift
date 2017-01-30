@@ -39,7 +39,8 @@ self.navigationController?.pushViewController(mapViewController, animated: true)
                 print("login failed")
             }
             if (FBSDKAccessToken.current()) != nil{
-                self.navigationController?.pushViewController(self.getMapViewControllerWith(Identifier: "CPMapViewIdentifier"), animated: true)
+                self.fetchFacebookUserProfile()
+               // self.navigationController?.pushViewController(self.getMapViewControllerWith(Identifier: "CPMapViewIdentifier"), animated: true)
             }
         }
     }
