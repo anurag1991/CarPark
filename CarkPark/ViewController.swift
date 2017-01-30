@@ -21,9 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if (FBSDKAccessToken.current()) != nil{
-            let mapViewController = CPMapViewController()
-            
-self.navigationController?.pushViewController(mapViewController, animated: true)        }
+            self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,16 +38,11 @@ self.navigationController?.pushViewController(mapViewController, animated: true)
                 print("login failed")
             }
             if (FBSDKAccessToken.current()) != nil{
-                self.fetchFacebookUserProfile()
-               // self.navigationController?.pushViewController(self.getMapViewControllerWith(Identifier: "CPMapViewIdentifier"), animated: true)
-            }
+            self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
         }
     }
-    
-    func getMapViewControllerWith(Identifier:String) -> CPMapViewController {
-        let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: Identifier) as? CPMapViewController
-        return mapViewControllerObj!
     }
+   
     
     func fetchFacebookUserProfile()  {
         FBSDKGraphRequest.init(graphPath: "/me", parameters: ["fields":"id,name,email,picture.type(large)"]).start { (connection, result, error) in
