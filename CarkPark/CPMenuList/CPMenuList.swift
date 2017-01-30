@@ -7,3 +7,7 @@
 //
 
 import Foundation
+import UIKit
+class CPMenuList : UIViewController {
+    
+}
