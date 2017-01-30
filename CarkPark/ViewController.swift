@@ -13,7 +13,7 @@ import LMSideBarController
 class ViewController: UIViewController {
     
     //********* Need to put all FB code into wrapper class < CPSocialNetworkingManager >
-
+    
     @IBOutlet weak var label_name: UILabel!
     @IBOutlet weak var fbLoginButton: UIButton!
     @IBOutlet weak var label_emailid: UILabel!
@@ -24,10 +24,10 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-       
+        
         // Dispose of any resources that can be recreated.
     }
     
@@ -38,11 +38,11 @@ class ViewController: UIViewController {
                 print("login failed")
             }
             if (FBSDKAccessToken.current()) != nil{
-            self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
+                self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
+            }
         }
     }
-    }
-   
+    
     
     func fetchFacebookUserProfile()  {
         FBSDKGraphRequest.init(graphPath: "/me", parameters: ["fields":"id,name,email,picture.type(large)"]).start { (connection, result, error) in
@@ -65,7 +65,6 @@ class ViewController: UIViewController {
                 let data = NSData(contentsOf: pictureURL as! URL)
                 self.imageView_profilepic.image = UIImage(data: data as! Data)
             }
-            
         }
     }
 }
