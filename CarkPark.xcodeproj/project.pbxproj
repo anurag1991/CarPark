@@ -16,6 +16,8 @@
 		2432BD791D9C733E00AD7EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2432BD771D9C733E00AD7EC6 /* LaunchScreen.storyboard */; };
 		2432BD841D9C733E00AD7EC6 /* CarkParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD831D9C733E00AD7EC6 /* CarkParkTests.swift */; };
 		2432BD8F1D9C733E00AD7EC6 /* CarkParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD8E1D9C733E00AD7EC6 /* CarkParkUITests.swift */; };
+		246592891E38FFB400E6040D /* CPSocialNetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */; };
+		24B3FED21E3FA34A00CF5848 /* CPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */; };
 		24FB602A1D9C77A600A0C148 /* CPMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB60291D9C77A600A0C148 /* CPMenuList.swift */; };
 		24FB602D1D9C78E500A0C148 /* CPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB602C1D9C78E500A0C148 /* CPLoginViewController.swift */; };
 		47D99C27E58B616FCC4B57EE /* Pods_CarkParkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */; };
@@ -56,6 +58,9 @@
 		2432BD8A1D9C733E00AD7EC6 /* CarkParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarkParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2432BD8E1D9C733E00AD7EC6 /* CarkParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarkParkUITests.swift; sourceTree = "<group>"; };
 		2432BD901D9C733E00AD7EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPSocialNetworkingManager.swift; sourceTree = "<group>"; };
+		24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarPark-Bridging-Header.h"; sourceTree = "<group>"; };
+		24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPMapViewController.swift; path = CPLoginViewController/CPMap/CPMapViewController.swift; sourceTree = "<group>"; };
 		24FB60291D9C77A600A0C148 /* CPMenuList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPMenuList.swift; path = CPMenuList/CPMenuList.swift; sourceTree = "<group>"; };
 		24FB602C1D9C78E500A0C148 /* CPLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPLoginViewController.swift; path = CPLoginViewController/CPLoginViewController.swift; sourceTree = "<group>"; };
 		4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */,
+				24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */,
 				2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */,
+				2465928A1E39012700E6040D /* SocialManager */,
 				24FB602E1D9C78ED00A0C148 /* CPLoginViewController */,
 				24FB602B1D9C77AB00A0C148 /* CPMenuList */,
 				2432BD6F1D9C733D00AD7EC6 /* Main.storyboard */,
@@ -151,10 +158,27 @@
 			path = CarkParkUITests;
 			sourceTree = "<group>";
 		};
+		2465928A1E39012700E6040D /* SocialManager */ = {
+			isa = PBXGroup;
+			children = (
+				246592881E38FFB400E6040D /* CPSocialNetworkingManager.swift */,
+			);
+			name = SocialManager;
+			sourceTree = "<group>";
+		};
+		24B3FED31E3FA35200CF5848 /* CPMap */ = {
+			isa = PBXGroup;
+			children = (
+				24B3FED11E3FA34A00CF5848 /* CPMapViewController.swift */,
+			);
+			name = CPMap;
+			sourceTree = "<group>";
+		};
 		24FB602B1D9C77AB00A0C148 /* CPMenuList */ = {
 			isa = PBXGroup;
 			children = (
 				24FB60291D9C77A600A0C148 /* CPMenuList.swift */,
+				24B3FED31E3FA35200CF5848 /* CPMap */,
 			);
 			name = CPMenuList;
 			sourceTree = "<group>";
@@ -243,6 +267,7 @@
 				2432BD871D9C733E00AD7EC6 /* Frameworks */,
 				2432BD881D9C733E00AD7EC6 /* Resources */,
 				8580D10E22AE6DDDD9CF7B37 /* [CP] Copy Pods Resources */,
+				FAFF8427778F881F8C9E1612 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,7 +395,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		51B0B988987DA25FA090722C /* [CP] Copy Pods Resources */ = {
@@ -400,7 +425,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8580D10E22AE6DDDD9CF7B37 /* [CP] Copy Pods Resources */ = {
@@ -433,6 +458,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FAFF8427778F881F8C9E1612 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarkParkUITests/Pods-CarkParkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FCE05F44C9E28D8E79E5A184 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -455,11 +495,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B3FED21E3FA34A00CF5848 /* CPMapViewController.swift in Sources */,
 				2432BD741D9C733D00AD7EC6 /* CarkPark.xcdatamodeld in Sources */,
 				2432BD6E1D9C733D00AD7EC6 /* ViewController.swift in Sources */,
 				2432BD6C1D9C733D00AD7EC6 /* AppDelegate.swift in Sources */,
 				24FB602D1D9C78E500A0C148 /* CPLoginViewController.swift in Sources */,
 				24FB602A1D9C77A600A0C148 /* CPMenuList.swift in Sources */,
+				246592891E38FFB400E6040D /* CPSocialNetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +654,10 @@
 			baseConfigurationReference = 14EF3C8E2AE04F5DE20E1769 /* Pods-CarkPark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = CarkPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.CarkPark;
@@ -625,6 +671,10 @@
 			baseConfigurationReference = 4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+				);
 				INFOPLIST_FILE = CarkPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.CarkPark;
