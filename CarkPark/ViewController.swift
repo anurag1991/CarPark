@@ -8,7 +8,6 @@
 
 import UIKit
 import FBSDKLoginKit
-import LMSideBarController
 
 class ViewController: UIViewController {
     
@@ -27,8 +26,6 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-       
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func facebookLogin(_ sender: Any) {

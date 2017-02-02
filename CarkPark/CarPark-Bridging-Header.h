@@ -10,5 +10,7 @@
 #define CarPark_Bridging_Header_h
 
 #import "LMSideBarController"
+#import "LMSideBarDepthStyle.h"
+
 
 #endif /* CarPark_Bridging_Header_h */

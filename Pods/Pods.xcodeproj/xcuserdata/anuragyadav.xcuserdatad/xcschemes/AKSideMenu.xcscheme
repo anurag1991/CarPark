@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '05909889236775981DD53C8D5076785B'
-               BlueprintName = 'LMSideBarController'
+               BlueprintIdentifier = 'DA1B01AFC2F8E7094AEC1DD4D0012B91'
+               BlueprintName = 'AKSideMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'LMSideBarController.framework'>
+               BuildableName = 'AKSideMenu.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YTV-Mb-nf3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OHG-4t-Jwq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik9-jT-ZWG">
-                                <rect key="frame" x="57" y="72" width="277" height="34"/>
+                                <rect key="frame" x="57" y="28" width="277" height="34"/>
                                 <state key="normal" title="Facebook Custom Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -32,16 +32,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbB-y4-eaM">
-                                <rect key="frame" x="28" y="261.5" width="306" height="20.5"/>
+                                <rect key="frame" x="28" y="217.5" width="306" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RY6-gD-nGz">
-                                <rect key="frame" x="69" y="401" width="240" height="170"/>
+                                <rect key="frame" x="69" y="357" width="240" height="214"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRE-pJ-Uve">
-                                <rect key="frame" x="28" y="175" width="306" height="20.5"/>
+                                <rect key="frame" x="28" y="131" width="306" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,12 +74,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.2" y="123.68815592203899"/>
+            <point key="canvasLocation" x="2692" y="-685"/>
+        </scene>
+        <!--Menu List-->
+        <scene sceneID="cQU-sh-gjh">
+            <objects>
+                <viewController storyboardIdentifier="CPMenuListIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OoN-zP-xxr" customClass="CPMenuList" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UWZ-gL-JQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="N4N-gX-hUw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCF-Nt-Ciw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="syw-fc-gJ6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N4N-gX-hUw" firstAttribute="top" secondItem="syw-fc-gJ6" secondAttribute="bottom" id="JSc-TT-grD"/>
+                            <constraint firstItem="syw-fc-gJ6" firstAttribute="top" secondItem="jCF-Nt-Ciw" secondAttribute="top" id="az2-K4-u0q"/>
+                            <constraint firstAttribute="trailing" secondItem="syw-fc-gJ6" secondAttribute="trailing" id="gC7-k5-6QL"/>
+                            <constraint firstItem="syw-fc-gJ6" firstAttribute="leading" secondItem="jCF-Nt-Ciw" secondAttribute="leading" id="mNQ-Wp-J8m"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOe-ub-abK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="801.94902548725645"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VAw-AU-vBi">
             <objects>
-                <viewController storyboardIdentifier="CPMapViewIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mdu-qp-uSU" customClass="CPMapViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CPMapViewIdentifier" storyboardIdentifier="CPMapViewIdentifier" id="Mdu-qp-uSU" customClass="CPMapViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ET5-yq-afA"/>
                         <viewControllerLayoutGuide type="bottom" id="gQf-Mx-UgL"/>
@@ -96,34 +125,62 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iZs-az-u7L" firstAttribute="centerX" secondItem="4pg-9I-gxu" secondAttribute="centerX" constant="8.5" id="MaS-Hz-DS2"/>
                             <constraint firstItem="iZs-az-u7L" firstAttribute="centerY" secondItem="4pg-9I-gxu" secondAttribute="centerY" constant="-47.5" id="XE8-7v-FgI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Map View Controller" id="iam-RM-PnU">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="yCO-qy-0JI">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="Mdu-qp-uSU" id="aX5-hv-aBG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOz-mv-GYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="123.68815592203899"/>
+            <point key="canvasLocation" x="2812" y="400"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="DCs-nq-yru">
+            <objects>
+                <viewController storyboardIdentifier="rootController" id="OHG-4t-Jwq" customClass="CPRootViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b6B-VA-bQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="o9C-gX-pd4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EcZ-nb-XBo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxM-4a-VsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="121"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="h6r-dA-mhI">
+        <scene sceneID="Kb8-vR-G04">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="YTV-Mb-nf3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationControllerIdentifier" automaticallyAdjustsScrollViewInsets="NO" id="5TH-hL-d4X" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b8D-R1-1b8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VjX-rw-z7G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dpc-7Q-g0R"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fcb-Lm-WQP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cM0-yi-P1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQV-ff-hzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+            <point key="canvasLocation" x="806" y="-826"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Balloon" width="320" height="568"/>
+    </resources>
 </document>
