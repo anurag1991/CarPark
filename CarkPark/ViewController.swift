@@ -30,11 +30,8 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-<<<<<<< HEAD
         
         // Dispose of any resources that can be recreated.
-=======
->>>>>>> master
     }
     
     @IBAction func facebookLogin(_ sender: Any) {
@@ -44,12 +41,8 @@ class ViewController: UIViewController {
                 print("login failed")
             }
             if (FBSDKAccessToken.current()) != nil{
-<<<<<<< HEAD
-                self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
-            }
-=======
                 self.fetchFacebookUserProfile()
->>>>>>> master
+            }
         }
     }
     
