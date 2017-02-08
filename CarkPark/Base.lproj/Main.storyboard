@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OHG-4t-Jwq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -64,6 +64,7 @@
                             <constraint firstItem="qbB-y4-eaM" firstAttribute="top" secondItem="SRE-pJ-Uve" secondAttribute="bottom" constant="66" id="zDR-bc-Qfe"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4jh-ZY-5yq"/>
                     <connections>
                         <outlet property="fbLoginButton" destination="ik9-jT-ZWG" id="Jcw-TZ-1s2"/>
                         <outlet property="imageView_profilepic" destination="RY6-gD-nGz" id="Lth-2e-qDw"/>
@@ -73,12 +74,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+            <point key="canvasLocation" x="2692" y="-685"/>
+        </scene>
+        <!--Menu List-->
+        <scene sceneID="cQU-sh-gjh">
+            <objects>
+                <viewController storyboardIdentifier="CPMenuListIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OoN-zP-xxr" customClass="CPMenuList" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UWZ-gL-JQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="N4N-gX-hUw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jCF-Nt-Ciw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="syw-fc-gJ6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N4N-gX-hUw" firstAttribute="top" secondItem="syw-fc-gJ6" secondAttribute="bottom" id="JSc-TT-grD"/>
+                            <constraint firstItem="syw-fc-gJ6" firstAttribute="top" secondItem="jCF-Nt-Ciw" secondAttribute="top" id="az2-K4-u0q"/>
+                            <constraint firstAttribute="trailing" secondItem="syw-fc-gJ6" secondAttribute="trailing" id="gC7-k5-6QL"/>
+                            <constraint firstItem="syw-fc-gJ6" firstAttribute="leading" secondItem="jCF-Nt-Ciw" secondAttribute="leading" id="mNQ-Wp-J8m"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOe-ub-abK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="801.94902548725645"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VAw-AU-vBi">
             <objects>
-                <viewController storyboardIdentifier="CPMapViewIdentifier" id="Mdu-qp-uSU" customClass="CPMapViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CPMapViewIdentifier" storyboardIdentifier="CPMapViewIdentifier" id="Mdu-qp-uSU" customClass="CPMapViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ET5-yq-afA"/>
                         <viewControllerLayoutGuide type="bottom" id="gQf-Mx-UgL"/>
@@ -87,22 +117,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MA6-Ep-6X7">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZs-az-u7L">
+                                <rect key="frame" x="157" y="271" width="78" height="30"/>
+                                <state key="normal" title="logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="Mdu-qp-uSU" eventType="touchUpInside" id="YTm-O7-6DU"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MA6-Ep-6X7" firstAttribute="leading" secondItem="4pg-9I-gxu" secondAttribute="leading" id="7iZ-WJ-00A"/>
-                            <constraint firstAttribute="bottom" secondItem="MA6-Ep-6X7" secondAttribute="bottom" id="9eK-cq-aeH"/>
-                            <constraint firstAttribute="trailing" secondItem="MA6-Ep-6X7" secondAttribute="trailing" id="UGG-Er-r74"/>
-                            <constraint firstItem="MA6-Ep-6X7" firstAttribute="top" secondItem="4pg-9I-gxu" secondAttribute="top" constant="44" id="ngl-7p-z8j"/>
+                            <constraint firstItem="iZs-az-u7L" firstAttribute="centerX" secondItem="4pg-9I-gxu" secondAttribute="centerX" constant="8.5" id="MaS-Hz-DS2"/>
+                            <constraint firstItem="iZs-az-u7L" firstAttribute="centerY" secondItem="4pg-9I-gxu" secondAttribute="centerY" constant="-47.5" id="XE8-7v-FgI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Map View Controller" id="iam-RM-PnU">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="yCO-qy-0JI">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="Mdu-qp-uSU" id="aX5-hv-aBG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOz-mv-GYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857.97101449275374" y="123.91304347826087"/>
+            <point key="canvasLocation" x="2812" y="400"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="DCs-nq-yru">
+            <objects>
+                <viewController storyboardIdentifier="rootController" id="OHG-4t-Jwq" customClass="CPRootViewController" customModule="CarkPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b6B-VA-bQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="o9C-gX-pd4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EcZ-nb-XBo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxM-4a-VsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="121"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kb8-vR-G04">
+            <objects>
+                <navigationController storyboardIdentifier="navigationControllerIdentifier" automaticallyAdjustsScrollViewInsets="NO" id="5TH-hL-d4X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VjX-rw-z7G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fcb-Lm-WQP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQV-ff-hzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="-826"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Balloon" width="320" height="568"/>
+    </resources>
 </document>
