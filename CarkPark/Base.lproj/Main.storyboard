@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ik9-jT-ZWG">
-                                <rect key="frame" x="57" y="28" width="277" height="34"/>
+                                <rect key="frame" x="57" y="72" width="277" height="34"/>
                                 <state key="normal" title="Facebook Custom Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -32,16 +32,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbB-y4-eaM">
-                                <rect key="frame" x="28" y="217.5" width="306" height="20.5"/>
+                                <rect key="frame" x="28" y="261.5" width="306" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RY6-gD-nGz">
-                                <rect key="frame" x="69" y="357" width="240" height="214"/>
+                                <rect key="frame" x="69" y="401" width="240" height="170"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRE-pJ-Uve">
-                                <rect key="frame" x="28" y="131" width="306" height="20.5"/>
+                                <rect key="frame" x="28" y="175" width="306" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2692" y="-685"/>
+            <point key="canvasLocation" x="1561" y="-1078"/>
         </scene>
         <!--Menu List-->
         <scene sceneID="cQU-sh-gjh">
@@ -91,19 +91,43 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="syw-fc-gJ6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl-1252995_1280" translatesAutoresizingMaskIntoConstraints="NO" id="5Mw-J7-SRx">
+                                <rect key="frame" x="32" y="58" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="2JL-Bs-AsR"/>
+                                    <constraint firstAttribute="height" constant="120" id="2ez-yY-USd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="focusOnFaces" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ruby loose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A79-By-otV">
+                                <rect key="frame" x="44.5" y="174" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5Mw-J7-SRx" firstAttribute="centerX" secondItem="A79-By-otV" secondAttribute="centerX" constant="5" id="5z9-p6-Gwj"/>
+                            <constraint firstItem="A79-By-otV" firstAttribute="top" secondItem="5Mw-J7-SRx" secondAttribute="bottom" constant="-4" id="BqY-Ru-kAX"/>
+                            <constraint firstItem="5Mw-J7-SRx" firstAttribute="leading" secondItem="jCF-Nt-Ciw" secondAttribute="leadingMargin" constant="16" id="C4a-F9-NBW"/>
                             <constraint firstItem="N4N-gX-hUw" firstAttribute="top" secondItem="syw-fc-gJ6" secondAttribute="bottom" id="JSc-TT-grD"/>
+                            <constraint firstItem="5Mw-J7-SRx" firstAttribute="top" secondItem="UWZ-gL-JQn" secondAttribute="bottom" constant="38" id="a2r-HJ-bBf"/>
                             <constraint firstItem="syw-fc-gJ6" firstAttribute="top" secondItem="jCF-Nt-Ciw" secondAttribute="top" id="az2-K4-u0q"/>
                             <constraint firstAttribute="trailing" secondItem="syw-fc-gJ6" secondAttribute="trailing" id="gC7-k5-6QL"/>
                             <constraint firstItem="syw-fc-gJ6" firstAttribute="leading" secondItem="jCF-Nt-Ciw" secondAttribute="leading" id="mNQ-Wp-J8m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profilePictureImage" destination="5Mw-J7-SRx" id="Kou-pO-rb8"/>
+                        <outlet property="userName" destination="A79-By-otV" id="kiN-Np-8Xv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jOe-ub-abK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="801.94902548725645"/>
+            <point key="canvasLocation" x="-228" y="-331.48425787106447"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VAw-AU-vBi">
@@ -141,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOz-mv-GYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="400"/>
+            <point key="canvasLocation" x="1561" y="-397"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="DCs-nq-yru">
@@ -159,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxM-4a-VsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-687" y="121"/>
+            <point key="canvasLocation" x="-228" y="-1078"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kb8-vR-G04">
@@ -177,10 +201,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQV-ff-hzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="-826"/>
+            <point key="canvasLocation" x="618" y="-1078"/>
         </scene>
     </scenes>
     <resources>
         <image name="Balloon" width="320" height="568"/>
+        <image name="girl-1252995_1280" width="853" height="1280"/>
     </resources>
 </document>

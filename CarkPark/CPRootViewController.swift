@@ -16,10 +16,9 @@ import FBSDKLoginKit
 public class CPRootViewController: AKSideMenu, AKSideMenuDelegate {
     
     override public func awakeFromNib() {
-        
-   
         super.awakeFromNib()
-        self.menuPreferredStatusBarStyle = UIStatusBarStyle.lightContent
+        
+        self.menuPreferredStatusBarStyle = UIStatusBarStyle.default
         self.contentViewShadowColor = UIColor.black
         self.contentViewShadowOffset = CGSize(width: 0, height: 0)
         self.contentViewShadowOpacity = 0.6

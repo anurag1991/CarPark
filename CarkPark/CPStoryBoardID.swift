@@ -14,6 +14,7 @@ struct Constant {
         static let mapViewControllerIdentifier = "CPMapViewIdentifier"
         static let menuListControllerIdentifier = "CPMenuListIdentifier"
         static let navigationControllerIdentifier  = "navigationControllerIdentifier"
+        static let loginViewController = "loginViewController"
     }
 }
 
@@ -32,5 +33,11 @@ class CPStoryBoardID: NSObject {
     func menuListViewController() -> CPMenuList {
         let menuListController = storyboard.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.menuListControllerIdentifier) as? CPMenuList
         return menuListController!
+    }
+    
+    // Mark: Menu List Controllers
+    
+    func homeViewController() -> UIViewController {
+        return UINavigationController.init(rootViewController: storyboard.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.mapViewControllerIdentifier))
     }
 }
