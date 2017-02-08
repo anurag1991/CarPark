@@ -12,7 +12,7 @@ import FBSDKLoginKit
 class ViewController: UIViewController {
     
     //********* Need to put all FB code into wrapper class < CPSocialNetworkingManager >
-
+    
     @IBOutlet weak var label_name: UILabel!
     @IBOutlet weak var fbLoginButton: UIButton!
     @IBOutlet weak var label_emailid: UILabel!
@@ -27,9 +27,11 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
+        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func facebookLogin(_ sender: Any) {
@@ -40,10 +42,10 @@ class ViewController: UIViewController {
             }
             if (FBSDKAccessToken.current()) != nil{
                 self.fetchFacebookUserProfile()
+            }
         }
     }
-    }
-   
+    
     
     func fetchFacebookUserProfile()  {
         FBSDKGraphRequest.init(graphPath: "/me", parameters: ["fields":"id,name,email,picture.type(large)"]).start { (connection, result, error) in
@@ -71,7 +73,6 @@ class ViewController: UIViewController {
                 print(UserData.sharedInstance.userName)
                 self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
             }
-            
         }
     }
 }
