@@ -8,7 +8,6 @@
 
 import UIKit
 import FBSDKLoginKit
-import LMSideBarController
 
 class ViewController: UIViewController {
     
@@ -18,8 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var fbLoginButton: UIButton!
     @IBOutlet weak var label_emailid: UILabel!
     @IBOutlet weak var imageView_profilepic: UIImageView!
+    
+    var userData : UserData?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if (FBSDKAccessToken.current()) != nil{
             self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
         }
@@ -27,8 +30,11 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+<<<<<<< HEAD
         
         // Dispose of any resources that can be recreated.
+=======
+>>>>>>> master
     }
     
     @IBAction func facebookLogin(_ sender: Any) {
@@ -38,8 +44,12 @@ class ViewController: UIViewController {
                 print("login failed")
             }
             if (FBSDKAccessToken.current()) != nil{
+<<<<<<< HEAD
                 self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
             }
+=======
+                self.fetchFacebookUserProfile()
+>>>>>>> master
         }
     }
     
@@ -55,15 +65,20 @@ class ViewController: UIViewController {
             }
             if let email = dictionary["email"] as? String{
                 self.label_emailid.text = email
+                
             }
             if let name = dictionary["name"] as? String{
                 self.label_name.text = name
+                UserData.sharedInstance.userName = name
             }
             
             if let picture = dictionary["picture"] as? NSDictionary, let data = picture["data"] as? NSDictionary, let url = data["url"] as? String{
                 let pictureURL = NSURL(string: url)
                 let data = NSData(contentsOf: pictureURL as! URL)
                 self.imageView_profilepic.image = UIImage(data: data as! Data)
+                UserData.sharedInstance.userProfilePicture = UIImage(data: data as! Data)
+                print(UserData.sharedInstance.userName)
+                self.navigationController?.pushViewController(CPStoryBoardID.sharedInstance.mapViewController(), animated: true)
             }
         }
     }

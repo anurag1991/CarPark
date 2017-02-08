@@ -9,9 +9,13 @@
 import Foundation
 import UIKit
 
-struct StoryBoardIdentifier {
-    static let mapViewControllerIdentifier = "CPMapViewIdentifier"
-    
+struct Constant {
+    struct StoryBoardIdentifier {
+        static let mapViewControllerIdentifier = "CPMapViewIdentifier"
+        static let menuListControllerIdentifier = "CPMenuListIdentifier"
+        static let navigationControllerIdentifier  = "navigationControllerIdentifier"
+        static let loginViewController = "loginViewController"
+    }
 }
 
 class CPStoryBoardID: NSObject {
@@ -21,8 +25,19 @@ class CPStoryBoardID: NSObject {
     static let sharedInstance = CPStoryBoardID()
     
     func mapViewController() -> CPMapViewController {
-        let mapViewControllerObj = storyboard.instantiateViewController(withIdentifier: StoryBoardIdentifier.mapViewControllerIdentifier) as? CPMapViewController
+        let mapViewControllerObj = storyboard.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.mapViewControllerIdentifier) as? CPMapViewController
         return mapViewControllerObj!
 
+    }
+    
+    func menuListViewController() -> CPMenuList {
+        let menuListController = storyboard.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.menuListControllerIdentifier) as? CPMenuList
+        return menuListController!
+    }
+    
+    // Mark: Menu List Controllers
+    
+    func homeViewController() -> UIViewController {
+        return UINavigationController.init(rootViewController: storyboard.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.mapViewControllerIdentifier))
     }
 }

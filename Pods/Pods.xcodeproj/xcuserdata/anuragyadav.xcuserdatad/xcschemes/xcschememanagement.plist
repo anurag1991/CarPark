@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AKSideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,11 +30,6 @@
 			<false/>
 		</dict>
 		<key>FacebookLogin.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>LMSideBarController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,7 +87,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C583C1A1964375CB2CA543FB74F77290</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C745E88D4E081BCBBD580157F874015E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA1B01AFC2F8E7094AEC1DD4D0012B91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
