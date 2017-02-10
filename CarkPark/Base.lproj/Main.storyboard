@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OHG-4t-Jwq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OHG-4t-Jwq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,16 +32,44 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbB-y4-eaM">
-                                <rect key="frame" x="28" y="261.5" width="306" height="20.5"/>
+                                <rect key="frame" x="28" y="262" width="306" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RY6-gD-nGz">
-                                <rect key="frame" x="69" y="401" width="240" height="170"/>
+                                <rect key="frame" x="69" y="402" width="240" height="169"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRE-pJ-Uve">
-                                <rect key="frame" x="28" y="175" width="306" height="20.5"/>
+                                <rect key="frame" x="28" y="175" width="306" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Sn-rV-hZA" customClass="GIDSignInButton">
+                                <rect key="frame" x="134" y="114" width="111" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fex-V7-THN">
+                                <rect key="frame" x="39" y="579" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign out"/>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDd-Z6-JUw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCT-eQ-KYh">
+                                <rect key="frame" x="39" y="617" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Disconnect"/>
+                                <connections>
+                                    <action selector="didTapDisconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vha-5s-5iG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y6-3m-Fr3">
+                                <rect key="frame" x="154" y="586" width="180" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,15 +94,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="4jh-ZY-5yq"/>
                     <connections>
+                        <outlet property="disconnectButton" destination="yCT-eQ-KYh" id="qSs-s3-oz9"/>
                         <outlet property="fbLoginButton" destination="ik9-jT-ZWG" id="Jcw-TZ-1s2"/>
                         <outlet property="imageView_profilepic" destination="RY6-gD-nGz" id="Lth-2e-qDw"/>
                         <outlet property="label_emailid" destination="qbB-y4-eaM" id="ZB7-Kj-zLR"/>
                         <outlet property="label_name" destination="SRE-pJ-Uve" id="cI0-80-Wqx"/>
+                        <outlet property="signInButton" destination="9Sn-rV-hZA" id="335-jw-ZP3"/>
+                        <outlet property="signOutButton" destination="fex-V7-THN" id="2BZ-4M-yUY"/>
+                        <outlet property="statusText" destination="7Y6-3m-Fr3" id="tOp-Xs-frF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="-1078"/>
+            <point key="canvasLocation" x="1560.8" y="-1078.1109445277361"/>
         </scene>
         <!--Menu List-->
         <scene sceneID="cQU-sh-gjh">
@@ -190,7 +222,7 @@
             <objects>
                 <navigationController storyboardIdentifier="navigationControllerIdentifier" automaticallyAdjustsScrollViewInsets="NO" id="5TH-hL-d4X" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VjX-rw-z7G">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VjX-rw-z7G">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
