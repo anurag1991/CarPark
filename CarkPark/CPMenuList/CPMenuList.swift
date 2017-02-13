@@ -14,7 +14,8 @@ import FBSDKCoreKit
 public class CPMenuList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableView: UITableView?
-    var userData : UserData?
+    var userDataObj = UserData()
+    let  notifcation = NotificationCenter.default
     
     
     @IBOutlet weak var profilePictureImage: UIImageView!
@@ -23,9 +24,17 @@ public class CPMenuList: UIViewController, UITableViewDelegate, UITableViewDataS
         super.init(coder: aDecoder)
     }
     
+    override public func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if (self.userName.text?.isEmpty)! {
+            let savedUserData = userDataObj.retriveDataFromUserDefaults()
+            self.userName.text = savedUserData.userName
+            self.profilePictureImage.set(image: savedUserData.image, focusOnFaces: true)
+        }
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
         
         let tableView: UITableView = UITableView.init(frame: CGRect(x: 0, y: (self.view.frame.size.height - 54 * 5) / 2.0, width: self.view.frame.size.width, height: 54 * 5), style: UITableViewStyle.plain)
         tableView.autoresizingMask = [UIViewAutoresizing.flexibleTopMargin, UIViewAutoresizing.flexibleBottomMargin, UIViewAutoresizing.flexibleWidth]
@@ -39,11 +48,26 @@ public class CPMenuList: UIViewController, UITableViewDelegate, UITableViewDataS
         
         self.tableView = tableView
         self.view.addSubview(self.tableView!)
-        
         self.profilePictureImage.layer.cornerRadius = self.profilePictureImage.frame.size.width/2
-        self.profilePictureImage.image = UserData.sharedInstance.userProfilePicture
-        print(UserData.sharedInstance.userProfilePicture)
-        print(UserData.sharedInstance.userName)
+        
+        notifcation.addObserver(forName:Notification.Name(rawValue:"MyNotification"),
+                       object:nil, queue:nil,
+                       using:catchNotification)
+    }
+  
+
+    func catchNotification(notification:Notification) -> Void {
+        print("Catch notification")
+        
+        guard let userInfo = notification.userInfo,
+            let userName  = userInfo["userName"] as? String,
+            let image     = userInfo["image"]    as? UIImage else {
+                print("No userInfo found in notification")
+                return
+        }
+        notifcation.removeObserver(self)
+        self.userName.text = userName
+        self.profilePictureImage.set(image: image, focusOnFaces: true)
     }
     
     // MARK: - <UITableViewDelegate>
@@ -58,18 +82,13 @@ public class CPMenuList: UIViewController, UITableViewDelegate, UITableViewDataS
             FBSDKAccessToken.setCurrent(nil)
             self.sideMenuViewController!.setContentViewController(UINavigationController.init(rootViewController: self.storyboard!.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.loginViewController)), animated: true)
             self.sideMenuViewController!.hideMenuViewController()
-          
-      /*
-        case 1:
-            self.sideMenuViewController!.setContentViewController(UINavigationController.init(rootViewController: self.storyboard!.instantiateViewController(withIdentifier: "secondViewController")), animated: true)
-            self.sideMenuViewController!.hideMenuViewController()
- */
-            
+
         default:
             self.sideMenuViewController!.setContentViewController(CPStoryBoardID.sharedInstance.homeViewController(), animated: true)
+            let userData = UserData.init()
+            userData.removeAllDataOfUser()
             self.sideMenuViewController!.hideMenuViewController()
             break
-
         }
      }
     
@@ -101,21 +120,10 @@ public class CPMenuList: UIViewController, UITableViewDelegate, UITableViewDataS
             cell!.selectedBackgroundView = UIView.init()
         }
         
-        
         var titles: [String] = ["Map", "Profile", "Settings", "Log Out"]
-      //  var images: [String] = ["IconHome", "IconCalendar", "IconProfile", "IconSettings", "IconEmpty"]
         cell!.textLabel?.text = titles[indexPath.row]
-        //cell!.imageView?.image = UIImage.init(named: images[indexPath.row])
         
         return cell!
     }
 }
-class CPImageView: UIImageView {
-    
-    override func setNeedsLayout() {
-        self.layer.cornerRadius = self.frame.size.width / 2;
-        self.clipsToBounds = true;
-    }
-    
 
-}

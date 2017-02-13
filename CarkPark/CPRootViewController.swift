@@ -27,7 +27,7 @@ public class CPRootViewController: AKSideMenu, AKSideMenuDelegate {
         
         self.contentViewController = self.storyboard!.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.navigationControllerIdentifier)
         self.leftMenuViewController = self.storyboard!.instantiateViewController(withIdentifier: Constant.StoryBoardIdentifier.menuListControllerIdentifier)
-        self.backgroundImage = UIImage.init(named: "Balloon")
+        self.backgroundImage = UIImage.init(named: "star")
         self.delegate = self
     }
     
