@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		19295F94DBF00376F0FD9247 /* Pods_CarkParkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C020C8FDE1BD8AB98EED4587 /* Pods_CarkParkTests.framework */; };
 		2431B4FD1E4A5A7B00EAD843 /* UIImageView+FaceAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431B4FC1E4A5A7B00EAD843 /* UIImageView+FaceAware.swift */; };
-		2431B4FF1E4A5E5B00EAD843 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431B4FE1E4A5E5B00EAD843 /* UserData.swift */; };
+		2431B50F1E4BC28E00EAD843 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431B50E1E4BC28E00EAD843 /* UserData.swift */; };
 		2432BD6C1D9C733D00AD7EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */; };
 		2432BD6E1D9C733D00AD7EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */; };
 		2432BD711D9C733D00AD7EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2432BD6F1D9C733D00AD7EC6 /* Main.storyboard */; };
@@ -48,7 +48,7 @@
 		0BAF825155EFB77DCDD69B0A /* Pods-CarkParkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkParkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarkParkUITests/Pods-CarkParkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		14EF3C8E2AE04F5DE20E1769 /* Pods-CarkPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkPark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark.debug.xcconfig"; sourceTree = "<group>"; };
 		2431B4FC1E4A5A7B00EAD843 /* UIImageView+FaceAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+FaceAware.swift"; sourceTree = "<group>"; };
-		2431B4FE1E4A5E5B00EAD843 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2431B50E1E4BC28E00EAD843 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2432BD681D9C733D00AD7EC6 /* CarkPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarkPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2432BD6D1D9C733D00AD7EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240E76B81E5252ED00F205BF /* Modal Class */ = {
+			isa = PBXGroup;
+			children = (
+				2431B50E1E4BC28E00EAD843 /* UserData.swift */,
+			);
+			name = "Modal Class";
+			sourceTree = "<group>";
+		};
 		2432BD5F1D9C733D00AD7EC6 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +141,7 @@
 			children = (
 				2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */,
 				24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */,
-				2431B4FE1E4A5E5B00EAD843 /* UserData.swift */,
+				240E76B81E5252ED00F205BF /* Modal Class */,
 				24B3FF101E3FD7C000CF5848 /* Helper classes */,
 				2465928A1E39012700E6040D /* SocialManager */,
 				24FB602E1D9C78ED00A0C148 /* ViewControllers */,
@@ -528,7 +536,7 @@
 				2432BD6C1D9C733D00AD7EC6 /* AppDelegate.swift in Sources */,
 				24FB602A1D9C77A600A0C148 /* CPMenuList.swift in Sources */,
 				246592891E38FFB400E6040D /* CPSocialNetworkingManager.swift in Sources */,
-				2431B4FF1E4A5E5B00EAD843 /* UserData.swift in Sources */,
+				2431B50F1E4BC28E00EAD843 /* UserData.swift in Sources */,
 				2431B4FD1E4A5A7B00EAD843 /* UIImageView+FaceAware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
