@@ -16,6 +16,12 @@ struct Constant {
         static let navigationControllerIdentifier  = "navigationControllerIdentifier"
         static let loginViewController = "loginViewController"
     }
+    struct FaceBookPermissions {
+      static   let parameters = ["fields":"id,name,email,picture.type(large)"]
+      static   let graphPath = "/me"
+      static   let readPermission = ["email","public_profile"]
+ 
+    }
 }
 
 class CPStoryBoardID: NSObject {

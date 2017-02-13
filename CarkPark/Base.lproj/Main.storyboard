@@ -88,10 +88,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balloon" translatesAutoresizingMaskIntoConstraints="NO" id="syw-fc-gJ6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars" translatesAutoresizingMaskIntoConstraints="NO" id="syw-fc-gJ6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl-1252995_1280" translatesAutoresizingMaskIntoConstraints="NO" id="5Mw-J7-SRx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Mw-J7-SRx">
                                 <rect key="frame" x="32" y="58" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="2JL-Bs-AsR"/>
@@ -101,10 +101,10 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="focusOnFaces" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ruby loose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A79-By-otV">
-                                <rect key="frame" x="44.5" y="174" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A79-By-otV">
+                                <rect key="frame" x="87" y="174" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -205,7 +205,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Balloon" width="320" height="568"/>
-        <image name="girl-1252995_1280" width="853" height="1280"/>
+        <image name="Stars" width="320" height="568"/>
     </resources>
 </document>
