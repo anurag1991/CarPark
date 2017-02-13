@@ -4,6 +4,7 @@ AKSideMenu
 [![Build Status](https://travis-ci.org/dogo/AKSideMenu.svg?branch=master)](https://travis-ci.org/dogo/AKSideMenu)
 [![Cocoapods](http://img.shields.io/cocoapods/v/AKSideMenu.svg)](http://cocoapods.org/?q=AKSideMenu)
 [![Pod License](http://img.shields.io/cocoapods/l/AKSideMenu.svg)](https://github.com/dogo/AKSideMenu/blob/master/LICENSE)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 AKSideMenu is a double side menu library with parallax effect.
 
@@ -17,11 +18,20 @@ Build the examples from the `AKSideMenuExamples` directory.
 
 ## Installation
 
-AKSideMenu is available through [CocoaPods](http://cocoapods.org).
+### [CocoaPods](https://cocoapods.org/).
 
 To install, add the following line to your Podfile:
+```ruby
+pod 'AKSideMenu'
+```
+ 
+### [Carthage](https://github.com/Carthage/Carthage).
 
-    pod 'AKSideMenu'
+To install, add the following line to your  Cartfile: 
+ 
+```ruby
+github "dogo/AKSideMenu" "1.3.3"
+```
 
 ## Easy to use
 

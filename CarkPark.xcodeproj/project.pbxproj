@@ -24,6 +24,7 @@
 		24B3FF121E40D48200CF5848 /* CPRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3FF111E40D48200CF5848 /* CPRootViewController.swift */; };
 		24FB602A1D9C77A600A0C148 /* CPMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FB60291D9C77A600A0C148 /* CPMenuList.swift */; };
 		47D99C27E58B616FCC4B57EE /* Pods_CarkParkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */; };
+		6E4E2FBF1E4D11F50028DF16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E4E2FBE1E4D11F50028DF16 /* GoogleService-Info.plist */; };
 		A27336B8DF7CEA49891BE9EC /* Pods_CarkPark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		24FB60291D9C77A600A0C148 /* CPMenuList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CPMenuList.swift; path = CPMenuList/CPMenuList.swift; sourceTree = "<group>"; };
 		4E6A464052B0A888DADB761B /* Pods-CarkPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkPark.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkPark/Pods-CarkPark.release.xcconfig"; sourceTree = "<group>"; };
 		6C1A631424C357B986211FD3 /* Pods-CarkParkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarkParkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarkParkTests/Pods-CarkParkTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E4E2FBE1E4D11F50028DF16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84C3DF55898B962B8D4C8004 /* Pods_CarkParkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkParkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7D2904B250F6F0383CE24B /* Pods_CarkPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C020C8FDE1BD8AB98EED4587 /* Pods_CarkParkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarkParkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 		2432BD6A1D9C733D00AD7EC6 /* CarkPark */ = {
 			isa = PBXGroup;
 			children = (
+				6E4E2FBE1E4D11F50028DF16 /* GoogleService-Info.plist */,
 				2432BD6B1D9C733D00AD7EC6 /* AppDelegate.swift */,
 				24B3FED01E3FA14900CF5848 /* CarPark-Bridging-Header.h */,
 				240E76B81E5252ED00F205BF /* Modal Class */,
@@ -364,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2432BD791D9C733E00AD7EC6 /* LaunchScreen.storyboard in Resources */,
+				6E4E2FBF1E4D11F50028DF16 /* GoogleService-Info.plist in Resources */,
 				2432BD761D9C733E00AD7EC6 /* Assets.xcassets in Resources */,
 				2432BD711D9C733D00AD7EC6 /* Main.storyboard in Resources */,
 			);
@@ -696,7 +700,7 @@
 				);
 				INFOPLIST_FILE = CarkPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.CarkPark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.CarPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -713,7 +717,7 @@
 				);
 				INFOPLIST_FILE = CarkPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.CarkPark;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.CarPark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
