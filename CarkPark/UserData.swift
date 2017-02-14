@@ -36,7 +36,10 @@ class UserData {
     }
     
     func retriveDataFromUserDefaults() -> (userName:String,userEmail:String,image:UIImage) {
-        var userDataDict = userDefault.value(forKey: "userData") as! Dictionary<String,String>
+        
+        guard let userDataDict = userDefault.value(forKey: "userData") as? Dictionary<String,String> else {
+            return ("","",UIImage.init(named: "girl-1252995_1280")!)
+        }
         self.userName = userDataDict["userName"]!
         self.userEmailAddress = userDataDict["emailAdd"]!
         self.userProfilePicture = self.getImageFromDocumentryDirectory(withImageName: "profile.jpg")
